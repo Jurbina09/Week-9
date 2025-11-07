@@ -1,11 +1,13 @@
 #Use the template below to get started
+import requests
+import json
 
-url = endpoint
-response = requests.get(l)
+url = "https://api.nationalize.io/?name=nathaniel"
+response = requests.get(url)
 
-if response.status_code == “ok”:
-data = response.json()
+if response.status_code == 200:
+    data = response.json()
 else:
-print(f"Error code: {“error code”}")
-name = data[index of name]
+    print(f"Error code: {response.status_code}")
+name = data['name']
 print(name)
