@@ -1,0 +1,5 @@
+Make a copy of this document https://docs.google.com/document/d/18GMr3thhzc63DrKeuwCpW0WkIKClwCEa0ak47CoV8bY/edit?usp=sharing
+Fill out the document by listing at least three risks that could affect your Sprint 2 demo(Project). For each, provide a mitigation strategy and an owner.
+Share the document with your tech trainer and tech fellow.
+Add your document link to here: 
+Commit and push this file to Git
