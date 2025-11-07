@@ -6,6 +6,15 @@ number of orders they have placed. Group the results by employee’s first name.
 
 Please copy & paste your SQL query below AND add an explanation of the query: 
 
+SELECT FirstName, COUNT(*) AS NumberOfOrders 
+FROM Orders o
+JOIN Employees e
+ON e.EmployeeID = o.EmployeeID
+GROUP BY o.EmployeeID, FirstName
+ORDER BY NumberOfOrders DESC
+
+This query groups the table Orders by Employee ID, and counts the number of rows for each unique employee ID. It also joins the Orders table with the Employees table using EmployeeID as the foreign key. The Select clause defines two columns (FirstName, and NumberOfOrders) to be displayed in the output. The results are sorted by descending order of NumberOfOrders.
+
 
 
 4. For submission commit and push this .txt file to Github
